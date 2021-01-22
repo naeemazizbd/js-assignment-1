@@ -44,18 +44,18 @@ function hotelCost(day) {
     } 
     // Second 10 days, 11th to 20th, amount per day 80
     else if (day <= 20) {
-      let firstPart = 10 * 100;
+      let firstPartDays = 10 * 100;
       let remainingDays = day - 10;
-      let secondPart = remainingDays * 80;
-      amount = firstPart + secondPart;
+      let secondPartDays = remainingDays * 80;
+      amount = firstPartDays + secondPartDays;
     } 
     // Third part 21th day to unlimited, amount per day 50 
     else {
-      let firstPart = 10 * 100;
-      let secondPart = 10 * 80;
+      let firstPartDays = 10 * 100;
+      let secondPartDays = 10 * 80;
       let remainingDays = day - 20;
-      let thirdPart = remainingDays * 50;
-      amount = firstPart + secondPart + thirdPart;
+      let thirdPartDays = remainingDays * 50;
+      amount = firstPartDays + secondPartDays + thirdPartDays;
     }
   
     return amount;
